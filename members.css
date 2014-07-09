@@ -1,0 +1,63 @@
+#members {}
+.member {
+	position: relative;
+	float: left;
+	width: 24%;
+	margin-right: 1%;
+	margin-bottom: 1%;
+	overflow: hidden;
+}
+.member .member-figure {
+	position: relative;
+	overflow: hidden;
+}
+.member .member-figure img {
+	display: block;
+}
+.member .member-caption {
+	position: absolute;
+	top: 0;
+	right: 0;
+
+	padding: 0 2%;
+	line-height: 24px;
+	
+	font-size: 0.75em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.member .member-title {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+
+	width: 96%;
+	
+	margin: 0;
+	padding: 4px 2%;
+	line-height: 24px;
+
+	color: #fff;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+	
+	background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.75)));
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
+	background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
+	background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
+	background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.75) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#bf000000',GradientType=0 );
+}
+@media only screen and (max-width: 960px) {
+	.member {
+		width: 32.333%;
+	}
+}
+@media only screen and (max-width: 640px) {
+	.member {
+		width: 49%;
+	}
+}
