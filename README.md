@@ -8,4 +8,4 @@ A wordpress plugin to display members in a grid on a page via shortcode and cust
 # How To
 
 * Every member has to be set up as aseperated custom post under members
-* on a static page you can call a grid of all members by using the shortcode ````members````.
+* on a static page you can call a grid of all members by using the shortcode ````[members]````.
