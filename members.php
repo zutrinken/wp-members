@@ -1,9 +1,9 @@
 <?php
 /*
 	Plugin Name: Members
-	Plugin URI: http://experimental.zutrinken.com
+	Plugin URI: https://github.com/zutrinken/wp-members
 	Description: Display members in a grid on a page via shortcode and custom post types.
-	Version: 1
+	Version: 0.1
 	Author: Peter Amende
 	Author URI: http://zutrinken.com
 	Text Domain: members
@@ -92,25 +92,6 @@ function display_members_shortcode($atts) {
 	if (!empty($return)) return $return;
 }
 add_shortcode('members', 'display_members_shortcode');
-
-
-/*
-function members_build_meta() {
-
-}
-
-function members_extend_content($content){
-	global $post;
-	if ($post->post_type == 'members') {
-		$custom_content = members_build_meta();
-		$custom_content .= $content;
-		return $custom_content;
-	} else {
-		return $content;
-	}
-}
-add_filter('the_content', 'members_extend_content');
-*/
 
 function members_add_styles() {
 	wp_enqueue_style( 'members-css', plugins_url('members.css', __FILE__), array());
