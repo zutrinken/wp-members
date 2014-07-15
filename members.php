@@ -3,7 +3,7 @@
 	Plugin Name: Members
 	Plugin URI: https://github.com/zutrinken/wp-members
 	Description: Display members in a grid on a page via shortcode and custom post types.
-	Version: 1.0.1
+	Version: 1.0.2
 	Author: Peter Amende
 	Author URI: http://zutrinken.com
 	Text Domain: members
