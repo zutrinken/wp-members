@@ -44,10 +44,15 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 function display_members_shortcode($atts) {
 
+    $orderby = 'name';
+    if (isset($atts['orderby'])) {
+        $orderby = $atts['orderby'];
+    }
+
 	$args = array(
 		'post_type' => 'members',
 		'order' => 'ASC',
-		'orderby' => 'name',
+		'orderby' => $orderby,
 		'showposts' => '200',
 	);
 
